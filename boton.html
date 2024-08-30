@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Ocultar el botón por defecto */
+        #smallScreenButton {
+            display: none;
+        }
+
+        /* Mostrar el botón solo en dispositivos pequeños */
+        @media (max-width: 768px) {
+            #smallScreenButton {
+                display: block;
+                padding: 10px 20px;
+                background-color: #4CAF50; /* Color del botón */
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón que solo aparecerá en dispositivos pequeños -->
+    <a id="smallScreenButton" href="img.html">Ir a img.html</a>
+</body>
+</html>
